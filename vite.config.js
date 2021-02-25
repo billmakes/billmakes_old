@@ -3,6 +3,7 @@ import vue from '@vitejs/plugin-vue'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  publicDir: process.env.NODE_ENV === 'production' ? '/billmakes/' : '/',
+  publicDir:
+    process.env.NODE_ENV === 'production' ? '/billmakes/' : '/billmakes/',
   plugins: [vue()]
 })
