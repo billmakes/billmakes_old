@@ -1,0 +1,53 @@
+<template>
+  <header>
+    <nav
+      class="flex flex-col sm:flex-row justify-center sm:justify-between items-center p-6"
+    >
+      <div class="mb-2 sm:mb-0">
+        <NavButton
+          :nav-item="{ label: 'billmakes', name: 'home' }"
+          color="yellow"
+          class="ml-2 text-5xl"
+          >billmakes</NavButton
+        >
+      </div>
+      <div>
+        <NavButton
+          v-for="item in navRoutes"
+          :nav-item="item"
+          :key="item.name"
+          color="green"
+          class="ml-2"
+        >
+          {{ item.label }}
+        </NavButton>
+      </div>
+    </nav>
+  </header>
+</template>
+
+<script>
+import NavButton from './NavButton.vue'
+
+const navRoutes = [
+  { label: 'Home', name: 'home' },
+  { label: 'About', name: 'about' },
+  { label: 'Contact', name: 'contact' },
+  { label: 'Blog', name: 'blog' },
+  { label: 'CV', name: 'cv' }
+]
+export default {
+  setup() {
+    return {
+      navRoutes,
+      NavButton
+    }
+  }
+}
+</script>
+
+<style>
+#svg {
+  fill: red;
+}
+</style>
