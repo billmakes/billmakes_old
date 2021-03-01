@@ -6,8 +6,8 @@
       <div class="mb-2 sm:mb-0">
         <NavButton
           :nav-item="{ label: 'billmakes', name: 'home' }"
-          color="yellow"
-          class="ml-2 text-5xl"
+          color="gray"
+          class="ml-2 sm:text-5xl text-4xl"
           >billmakes</NavButton
         >
       </div>
@@ -16,8 +16,8 @@
           v-for="item in navRoutes"
           :nav-item="item"
           :key="item.name"
-          color="green"
-          class="ml-2"
+          color="gray"
+          class="ml-2 sm:text-lg text-sm"
         >
           {{ item.label }}
         </NavButton>
