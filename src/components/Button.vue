@@ -1,5 +1,8 @@
 <template>
-  <button class="rounded" :class="`bg-${color}-500 hover:bg-${color}-400`">
+  <button
+    class="rounded transition ease-in-out transform hover:scale-95"
+    :class="`bg-${color}-500 hover:bg-${color}-400`"
+  >
     <div
       class="font-bold mb-1 p-2 pb-2 rounded"
       :class="`bg-${color}-300 hover:bg-${color}-200`"

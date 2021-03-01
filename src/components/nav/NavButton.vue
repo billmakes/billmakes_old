@@ -1,6 +1,6 @@
 <template>
   <button
-    class="rounded"
+    class="rounded transition ease-in-out transform hover:scale-95"
     :class="`bg-${BtnColorProvider.getSelectedColor}-500 hover:bg-${BtnColorProvider.getSelectedColor}-400`"
   >
     <router-link :to="{ name: navItem.name }">
