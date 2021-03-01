@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <CardLayout class="mx-auto">
     <div
       class="flex flex-col sm:flex-row align-center justify-center items-center"
     >
@@ -24,9 +24,10 @@
         </p>
       </div>
     </div>
-  </div>
+  </CardLayout>
 </template>
 <script>
+import CardLayout from '../layouts/CardLayout.vue'
 export default {
   setup() {
     let colors = [
@@ -40,6 +41,7 @@ export default {
       'pink'
     ]
     return {
+      CardLayout,
       bgColor: colors[Math.floor(Math.random() * colors.length)]
     }
   }
