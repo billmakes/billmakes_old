@@ -2,7 +2,7 @@
   <div
     class="mt-2 flex sm:flex-row flex-col justify-center content-center mx-auto"
   >
-    <div class="flex flex-col mx-auto my-auto pr-3 text-center sm:text-right">
+    <div class="flex flex-col mx-auto my-auto pr-3 text-center">
       <span class="italic text-gray-600 font-bold">{{ source.name }}</span>
       <span class="italic text-gray-500">{{ source.location }}</span>
       <span class="italic text-gray-500">{{ source.title }}</span>
