@@ -15,7 +15,7 @@ export default {
   props: {
     color: {
       type: String,
-      default: 'yellow'
+      default: ''
     }
   },
   setup(props) {
