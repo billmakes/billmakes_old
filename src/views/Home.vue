@@ -15,14 +15,38 @@
       <a class="underline" href="mailto:hilbertwilliam@gmail.com">here</a>.
     </p>
   </CardLayout>
+  <CardLayout class="mx-auto mt-4">
+    <Button
+      @click="BtnColorProvider.changeColor"
+      :color="BtnColorProvider.getSelectedColor"
+      >Change Color</Button
+    >
+    <span class="ml-3"
+      ><span class="font-bold">Color: </span
+      >{{
+        BtnColorProvider.getSelectedColor
+          ? BtnColorProvider.getSelectedColor
+          : 'none'
+      }}</span
+    >
+  </CardLayout>
 </template>
 <script>
+import Button from '../components/Button.vue'
 import CardLayout from '../layouts/CardLayout.vue'
+
+import { BtnColorProvider } from '../composables/btn-color-provider.js'
 
 export default {
   setup() {
+    function logStuff() {
+      console.log('stuff')
+    }
     return {
-      CardLayout
+      Button,
+      BtnColorProvider,
+      CardLayout,
+      logStuff
     }
   }
 }

@@ -5,7 +5,7 @@
     >
       <div
         class="rounded-full flex items-center justify-center pr-1 pb-1 w-56 sm:w-64"
-        :class="`bg-yellow-500`"
+        :class="`bg-${BtnColorProvider.getSelectedColor}-500`"
       >
         <img src="../../assets/me_portrait.jpg" class="rounded-full" />
       </div>
@@ -28,21 +28,12 @@
 </template>
 <script>
 import CardLayout from '../layouts/CardLayout.vue'
+import { BtnColorProvider } from '../composables/btn-color-provider.js'
 export default {
   setup() {
-    let colors = [
-      'gray',
-      'red',
-      'yellow',
-      'green',
-      'blue',
-      'indigo',
-      'purple',
-      'pink'
-    ]
     return {
       CardLayout,
-      bgColor: colors[Math.floor(Math.random() * colors.length)]
+      BtnColorProvider
     }
   }
 }

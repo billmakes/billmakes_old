@@ -8,7 +8,7 @@
 
     <div
       v-if="route.name != 'blog' && route.name != 'cv'"
-      class="mt-3 container items-center mx-auto max-w-xl p-5 text-gray-700 bg-gray-100 sm:bg-white rounded sm:shadow-md"
+      class="container items-center mx-auto max-w-xl p-5 text-gray-700 bg-gray-100 sm:bg-white rounded sm:shadow-md"
     >
       <span class="font-bold">Latest blog posts</span>
       <p class="italic">Blog is still under construnction 🚧</p>
