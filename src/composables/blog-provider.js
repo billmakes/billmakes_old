@@ -3,7 +3,13 @@ import { reactive, computed, readonly } from 'vue'
 const posts = import.meta.glob('../../blog/*.md')
 
 for (const path in posts) {
-  import(/* @vite-ignore */ path + '?raw').then(async post => {
+  let newPath = path
+    .replace(/^.*[\\\/]/, '')
+    .split('.')
+    .slice(0, -1)
+    .join('.')
+
+  import('../../blog/' + newPath + '.md' + '?raw').then(async post => {
     let regMetaMatch = post.default.match(/(?<=\%)(.*?)(?=\%)/)[1]
     let meta = await JSON.parse(regMetaMatch)
 
