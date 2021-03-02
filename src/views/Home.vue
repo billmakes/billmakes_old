@@ -1,8 +1,15 @@
 <template>
   <CardLayout class="mx-auto">
-    <span class="text-3xl font-bold">Hi! I'm Bill Hilbert. 👋</span>
+    <div class="flex text-3xl font-bold">
+      Hi! I'm Bill Hilbert.
+      <div
+        class="transition duration-200 ease-in-out transform hover:rotate-45"
+      >
+        👋
+      </div>
+    </div>
     <p class="text-xl font-bold mb-2">
-      I'm a Software Engineer at DXC Technology.
+      I'm a {{ cv[0].title }} at {{ cv[0].name }}.
     </p>
     <p class="mb-2">
       Passionate about quality code, efficiency, fan of minimal design. My goal
@@ -32,6 +39,7 @@
   </CardLayout>
 </template>
 <script>
+import cv from '../components/cv/cv.js'
 import Button from '../components/Button.vue'
 import CardLayout from '../layouts/CardLayout.vue'
 
@@ -39,14 +47,11 @@ import { BtnColorProvider } from '../composables/btn-color-provider.js'
 
 export default {
   setup() {
-    function logStuff() {
-      console.log('stuff')
-    }
     return {
       Button,
       BtnColorProvider,
       CardLayout,
-      logStuff
+      cv
     }
   }
 }
