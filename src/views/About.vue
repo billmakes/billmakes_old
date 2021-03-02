@@ -16,11 +16,17 @@
         </p>
         <p class="mb-2">
           Currently residing in sunny St. Petersburg, FL. For those who are
-          interested, you may view my résumé.
+          interested, you may view my
+          <router-link :to="{ name: 'cv' }" class="underline"
+            >résumé</router-link
+          >.
         </p>
         <p class="mb-2">
-          Also don't hesitate to reach out, I would love to help with any
-          questions or look at any requests you may have.
+          Also don't hesitate to
+          <router-link :to="{ name: 'contact' }" class="underline"
+            >reach out</router-link
+          >, I would love to help with any questions or look at any requests you
+          may have.
         </p>
       </div>
     </div>

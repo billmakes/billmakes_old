@@ -13,7 +13,10 @@
             style="cursor: pointer"
             :class="`bg-${color}-300 hover:bg-${color}-200`"
           >
-            <span class="font-bold text-sm" :class="`text-${color}-700`">
+            <span
+              class="font-bold text-sm items-center"
+              :class="`text-${color}-700`"
+            >
               {{ tag }}
             </span>
           </div>
@@ -27,7 +30,9 @@
         </div>
       </div>
     </CardLayout>
-    <div class="fixed bottom-0 right-0 mb-4 mr-4">
+    <div
+      class="fixed bottom-0 right-0 mb-4 mr-4 opacity-80 sm:opacity-100 text-sm"
+    >
       <Button :color="color" @click="router.push({ name: 'blog' })"
         >Back to blog</Button
       >
