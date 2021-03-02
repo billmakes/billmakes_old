@@ -12,7 +12,7 @@
             <span class="font-bold text-4xl">{{ post.meta.title }}</span>
             <span class="font-bold text-lg">{{ post.meta.date }}</span>
           </div>
-          <div v-html="marked(post.post)"></div>
+          <div v-html="post.post"></div>
         </div>
       </div>
     </CardLayout>

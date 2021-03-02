@@ -1,4 +1,13 @@
-% {"id": "another-post", "title": "Another Post", "date": "today"} %
+---
+title: Awesome Title
+description: Describe this awesome content
+id: new-post
+date: today
+tags:
+  - 'great'
+  - 'awesome'
+  - 'rad'
+---
 
 # Marked - Markdown Parser
 

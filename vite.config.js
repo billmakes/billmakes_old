@@ -12,7 +12,7 @@ export default defineConfig({
       '/@': path.resolve(__dirname, './src')
     }
   },
-  plugins: [vue(), mdPlugin({})]
+  plugins: [vue(), mdPlugin({ mode: 'html' })]
   // build: {
   //   rollupOptions: {
   //     plugins: [json(), builtins()]
