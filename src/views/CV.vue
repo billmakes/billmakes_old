@@ -10,39 +10,46 @@
       <CVItem v-for="(item, index) in cv" :key="index" :source="item" />
     </div>
     <div class="ml-2 mt-2">
-      <CardLayout>
-        <div>
-          <span class="text-lg font-bold">Skills</span>
-        </div>
-        <ul class="list-disc list-inside grid sm:grid-cols-3 grid-cols-2">
-          <li v-for="(skill, index) in skills" :key="index">
-            {{ skill }}
-          </li>
-        </ul>
-      </CardLayout>
-      <CardLayout class="mt-2">
-        <div>
-          <span
-            >This list is a short summary of my favorite technology used. There
-            are countless skills and technology used when developing! Reach out
-            if you wish to know more.</span
-          >
-        </div>
-      </CardLayout>
-      <CardLayout class="mt-2">
-        <div class="ml-2 mt-2 flex flex-col">
+      <div class="sm:border-none border">
+        <CardLayout>
           <div>
-            <span class="text-lg font-bold">Contact Info</span>
+            <span class="text-lg font-bold">Skills</span>
           </div>
-          <span
-            >Email:
-            <a href="mailto:hilbertwilliam@gmail.com" class="underline"
-              >hilbertwilliam@gmail.com</a
-            ></span
-          >
-          <span>Location: St. Petersburg, FL</span>
-        </div>
-      </CardLayout>
+          <ul class="list-disc list-inside grid sm:grid-cols-3 grid-cols-2">
+            <li v-for="(skill, index) in skills" :key="index">
+              {{ skill }}
+            </li>
+          </ul>
+        </CardLayout>
+        <CardLayout class="mt-2">
+          <div>
+            <span
+              >This list is a short summary of my favorite technology used.
+              There are countless skills and technology used when developing!
+              Reach out if you wish to know more.</span
+            >
+          </div>
+        </CardLayout>
+      </div>
+      <div class="sm:border-none border mt-2">
+        <CardLayout class="mt-2">
+          <div class="flex justify-between flex-col sm:flex-row">
+            <div class="ml-2 flex flex-col">
+              <div>
+                <span class="text-lg font-bold">Contact Info</span>
+              </div>
+              <span
+                >Email:
+                <a href="mailto:hilbertwilliam@gmail.com" class="underline"
+                  >hilbertwilliam@gmail.com</a
+                ></span
+              >
+              <span>Location: St. Petersburg, FL</span>
+            </div>
+            <SocialButtons class="mt-4 self-center" />
+          </div>
+        </CardLayout>
+      </div>
     </div>
   </div>
 </template>
@@ -50,11 +57,13 @@
 import CardLayout from '/@/layouts/CardLayout.vue'
 import CVItem from '/@/components/cv/CVItem.vue'
 import cv from '/@/components/cv/cv.js'
+import SocialButtons from '/@/components/nav/SocialButtons.vue'
 
 export default {
   setup() {
     return {
       CardLayout,
+      SocialButtons,
       CVItem,
       cv,
       skills: [

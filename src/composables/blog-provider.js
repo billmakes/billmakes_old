@@ -8,12 +8,8 @@ for (const path in posts) {
     .split('.')
     .slice(0, -1)
     .join('.')
-  // posts[path]().then(res => {
-  //   console.log(res)
-  // })
-  import('../../blog/' + newPath + '.md').then(async post => {
-    console.log(post)
 
+  import('../../blog/' + newPath + '.md').then(async post => {
     state.posts.push({
       meta: post.attributes,
       post: post.html
