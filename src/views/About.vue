@@ -27,8 +27,8 @@
   </CardLayout>
 </template>
 <script>
-import CardLayout from '../layouts/CardLayout.vue'
-import { BtnColorProvider } from '../composables/btn-color-provider.js'
+import CardLayout from '/@/layouts/CardLayout.vue'
+import { BtnColorProvider } from '/@/composables/btn-color-provider.js'
 export default {
   setup() {
     return {

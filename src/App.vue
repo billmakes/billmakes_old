@@ -7,11 +7,13 @@
     </div>
 
     <div
-      v-if="route.name != 'blog' && route.name != 'cv'"
+      v-if="
+        route.name != 'blog' && route.name != 'cv' && route.name != 'blog-post'
+      "
       class="container items-center mx-auto max-w-xl p-5 text-gray-700 bg-gray-100 sm:bg-white rounded sm:shadow-md"
     >
-      <span class="font-bold">Latest blog posts</span>
-      <p class="italic">Blog is still under construnction 🚧</p>
+      <span class="font-bold">Latest blog posts 📚</span>
+      <PostList recent />
     </div>
     <div class="fixed bottom-0 right-0">
       <span class="italic text-gray-200">Under Construction</span>
@@ -21,7 +23,8 @@
 
 <script>
 import { useRoute } from 'vue-router'
-import NavHeader from './components/nav/NavHeader.vue'
+import PostList from '/@/components/blog/PostList.vue'
+import NavHeader from '/@/components/nav/NavHeader.vue'
 
 export default {
   setup() {
@@ -29,6 +32,7 @@ export default {
 
     return {
       route,
+      PostList,
       NavHeader
     }
   }

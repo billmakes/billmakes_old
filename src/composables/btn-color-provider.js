@@ -12,7 +12,7 @@ const colors = [
 ]
 
 const state = reactive({
-  selectedColor: colors[0]
+  selectedColor: colors[Math.floor(Math.random() * Math.floor(colors.length))]
 })
 
 function changeColor() {

@@ -12,8 +12,8 @@
 </template>
 
 <script>
-import CardLayout from '../layouts/CardLayout.vue'
-import SocialButtons from '../components/nav/SocialButtons.vue'
+import CardLayout from '/@/layouts/CardLayout.vue'
+import SocialButtons from '/@/components/nav/SocialButtons.vue'
 export default {
   setup() {
     return {

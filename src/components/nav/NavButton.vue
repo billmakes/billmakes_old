@@ -17,7 +17,7 @@
 </template>
 
 <script>
-import { BtnColorProvider } from '../../composables/btn-color-provider.js'
+import { BtnColorProvider } from '/@/composables/btn-color-provider.js'
 export default {
   props: {
     navItem: {

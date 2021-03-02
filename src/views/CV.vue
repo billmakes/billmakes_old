@@ -47,9 +47,9 @@
   </div>
 </template>
 <script>
-import CardLayout from '../layouts/CardLayout.vue'
-import CVItem from '../components/cv/CVItem.vue'
-import cv from '../components/cv/cv.js'
+import CardLayout from '/@/layouts/CardLayout.vue'
+import CVItem from '/@/components/cv/CVItem.vue'
+import cv from '/@/components/cv/cv.js'
 
 export default {
   setup() {

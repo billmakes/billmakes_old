@@ -39,11 +39,11 @@
   </CardLayout>
 </template>
 <script>
-import cv from '../components/cv/cv.js'
-import Button from '../components/Button.vue'
-import CardLayout from '../layouts/CardLayout.vue'
+import cv from '/@/components/cv/cv.js'
+import Button from '/@/components/Button.vue'
+import CardLayout from '/@/layouts/CardLayout.vue'
 
-import { BtnColorProvider } from '../composables/btn-color-provider.js'
+import { BtnColorProvider } from '/@/composables/btn-color-provider.js'
 
 export default {
   setup() {

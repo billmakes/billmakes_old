@@ -1,9 +1,10 @@
 import { createWebHistory, createRouter } from 'vue-router'
-import Home from '../views/Home.vue'
-import About from '../views/About.vue'
-import Blog from '../views/Blog.vue'
-import Contact from '../views/Contact.vue'
-import CV from '../views/CV.vue'
+import Home from '/@/views/Home.vue'
+import About from '/@/views/About.vue'
+import Blog from '/@/views/blog/Blog.vue'
+import Post from '/@/views/blog/Post.vue'
+import Contact from '/@/views/Contact.vue'
+import CV from '/@/views/CV.vue'
 
 const routes = [
   {
@@ -20,6 +21,11 @@ const routes = [
     path: '/blog',
     name: 'blog',
     component: Blog
+  },
+  {
+    path: '/blog/:id',
+    name: 'blog-post',
+    component: Post
   },
   {
     path: '/contact',
