@@ -1,6 +1,6 @@
 <template>
   <button
-    class="rounded transition ease-in-out transform hover:scale-95"
+    class="rounded shadow transition ease-in-out transform hover:scale-95"
     :class="`bg-${color}-500 hover:bg-${color}-400`"
   >
     <div

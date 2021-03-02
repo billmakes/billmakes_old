@@ -2,7 +2,7 @@
 title: Awesome Title
 description: Describe this awesome content
 id: another-post
-date: today
+date: March 2, 2021
 tags:
   - 'great'
   - 'awesome'

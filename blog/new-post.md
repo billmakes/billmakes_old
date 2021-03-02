@@ -1,8 +1,8 @@
 ---
-title: Awesome Title
+title: New Post
 description: Describe this awesome content
 id: new-post
-date: today
+date: March 1, 2021
 tags:
   - 'great'
   - 'awesome'

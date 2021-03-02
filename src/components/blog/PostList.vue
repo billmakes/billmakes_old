@@ -6,9 +6,9 @@
         :key="post.meta.id"
       >
         <router-link :to="{ name: 'blog-post', params: { id: post.meta.id } }"
-          >{{ post.meta.title }}
+          ><span class="underline">{{ post.meta.title }}</span>
           <span class="italic text-gray-500 text-sm">{{
-            `- ${post.meta.date}`
+            ` - ${post.meta.date}`
           }}</span></router-link
         >
       </li>
