@@ -12,8 +12,12 @@
       I'm a {{ cv[0].title }} at {{ cv[0].name }}.
     </p>
     <p class="mb-2">
+      This is my developer page. Every developer needs a web page, right? Well
+      this is it.
+    </p>
+    <p class="mb-2">
       Passionate about quality code, efficiency, fan of minimal design. My goal
-      is to create outstanding user experiences using the latest tools in web
+      is to create great user experiences using the latest tools in web
       technology, and to contribute something great to the open web.
     </p>
     <p class="mb-2">

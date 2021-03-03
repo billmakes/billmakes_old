@@ -30,7 +30,6 @@
 import NavButton from './NavButton.vue'
 
 const navRoutes = [
-  { label: 'Home', name: 'home' },
   { label: 'About', name: 'about' },
   { label: 'Contact', name: 'contact' },
   { label: 'Blog', name: 'blog' },
