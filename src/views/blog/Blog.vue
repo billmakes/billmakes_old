@@ -21,17 +21,17 @@
 </template>
 <script>
 import { ref } from 'vue'
-import { BlogProvider } from '/@/composables/blog-provider.js'
 import CardLayout from '/@/layouts/CardLayout.vue'
 import PostList from '/@/components/blog/PostList.vue'
 
 export default {
   setup() {
+    let term = ref('')
+
     return {
       CardLayout,
       PostList,
-      term: ref(''),
-      posts: BlogProvider.getPosts
+      term
     }
   }
 }

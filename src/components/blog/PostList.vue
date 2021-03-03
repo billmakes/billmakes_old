@@ -13,9 +13,9 @@
             <span
               class="underline"
               :class="
-                !BlogProvider.getFilteredPosts.length
-                  ? ''
-                  : `bg-${BtnColorProvider.getSelectedColor}-200`
+                term && term.length
+                  ? `bg-${BtnColorProvider.getSelectedColor}-200`
+                  : ''
               "
               >{{ post.meta.title }}</span
             >
@@ -62,7 +62,7 @@ export default {
       if (props.recent) {
         return BlogProvider.getPosts.slice(0, recentSize)
       } else {
-        if (BlogProvider.getFilteredPosts.length)
+        if (BlogProvider.getFilteredPosts.length && props.term.length)
           return BlogProvider.getFilteredPosts
         return BlogProvider.getPosts
       }
