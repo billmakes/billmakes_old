@@ -31,8 +31,16 @@ const state = reactive({
   filteredPosts: []
 })
 
-const getPosts = computed(() => state.posts)
-const getFilteredPosts = computed(() => state.filteredPosts)
+const getPosts = computed(() =>
+  state.posts.sort((a, b) =>
+    Date.parse(a.meta.date) < Date.parse(b.meta.date) ? 1 : -1
+  )
+)
+const getFilteredPosts = computed(() =>
+  state.filteredPosts.sort((a, b) =>
+    Date.parse(a.meta.date) < Date.parse(b.meta.date) ? 1 : -1
+  )
+)
 
 export const BlogProvider = readonly({
   getPosts,

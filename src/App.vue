@@ -12,6 +12,11 @@
       "
       class="container items-center mx-auto max-w-xl p-5 text-gray-700 bg-gray-100 sm:bg-white rounded sm:shadow-md"
     >
+      <div>
+        <span class="italic text-gray-500"
+          >Under Construction - Coming Soon 🚧</span
+        >
+      </div>
       <span class="font-bold">Latest blog posts 📚</span>
       <PostList recent />
     </div>
