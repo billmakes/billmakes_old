@@ -17,12 +17,25 @@ for (const path in posts) {
   })
 }
 
+function findMatches(term) {
+  if (term.length) {
+    state.filteredPosts = state.posts.filter(post => {
+      const regex = new RegExp(term, 'gi')
+      return post.meta.title.match(regex) || post.meta.description.match(regex)
+    })
+  } else state.filteredPosts = []
+}
+
 const state = reactive({
-  posts: []
+  posts: [],
+  filteredPosts: []
 })
 
 const getPosts = computed(() => state.posts)
+const getFilteredPosts = computed(() => state.filteredPosts)
 
 export const BlogProvider = readonly({
-  getPosts
+  getPosts,
+  getFilteredPosts,
+  filterPosts: findMatches
 })

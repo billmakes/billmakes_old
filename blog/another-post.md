@@ -4,9 +4,9 @@ description: Describe this awesome content
 id: another-post
 date: March 2, 2021
 tags:
-  - 'great'
-  - 'awesome'
-  - 'rad'
+  - 'vue.js'
+  - 'composition api'
+  - 'composables'
 ---
 
 # Marked - Markdown Parser

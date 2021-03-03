@@ -72,6 +72,8 @@ export default {
         'React.js',
         'Angular',
         'TypeScript',
+        'Node.js,',
+        'Express',
         'Nuxt.js',
         'Next.js',
         'Webpack',
