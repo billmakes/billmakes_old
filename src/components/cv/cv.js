@@ -1,10 +1,22 @@
 export default [
   {
+    name: 'RE/MAX Tech',
+    title: 'R&D Developer',
+    location: 'HQ Denver, Remote',
+    start: 'Mar. 2021',
+    end: 'Present',
+    description: [
+      'Responsible for a variety of front end features for our admin panel, user CMS, and mailing campaigns services.',
+      'Brought value to the teams I work with by making feature and app wide improvements to app performance and tidying up technical debt.',
+      'Introduced standards and best practices to be used by my team and others across multiple applications.'
+    ],
+  },
+  {
     name: 'DXC Technology',
     title: 'Professional Software Engineer',
     location: 'Tampa, FL',
     start: 'Dec. 2018',
-    end: 'Present',
+    end: 'Mar. 2021',
     description: [
       'Served as a team leader for the front end team, implementing new processes and methods for quality review and peer programming cooperation.',
       'Lead architectural initiatives for large client features and technical work such as migrating an entire enterprise application to newer frameworks.',
