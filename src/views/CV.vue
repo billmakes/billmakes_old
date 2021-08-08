@@ -40,8 +40,8 @@
               </div>
               <span
                 >Email:
-                <a href="mailto:hilbertwilliam@gmail.com" class="underline"
-                  >hilbertwilliam@gmail.com</a
+                <a href="mailto:billmakes@protonmail.com" class="underline"
+                  >billmakes@protonmail.com</a
                 ></span
               >
               <span>Location: St. Petersburg, FL</span>

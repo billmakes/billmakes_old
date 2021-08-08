@@ -23,7 +23,7 @@
     <p class="mb-2">
       If you have any questions, I would be happy to help. Feel free to shoot me
       an email
-      <a class="underline" href="mailto:hilbertwilliam@gmail.com">here</a>.
+      <a class="underline" href="mailto:billmakes@protonmail.com">here</a>.
     </p>
   </CardLayout>
   <CardLayout class="mx-auto mt-4">

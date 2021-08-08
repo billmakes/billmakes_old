@@ -18,7 +18,7 @@ export default {
     const socialLinks = [
       {
         label: 'email',
-        url: 'mailto:hilbertwilliam@gmail.com',
+        url: 'mailto:billmakes@protonmail.com',
         icon: 'gmail.svg'
       },
       {
