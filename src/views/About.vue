@@ -12,7 +12,7 @@
       <div class="container mx-auto p-5">
         <span class="text-3xl font-bold text-center">About me 🌴</span>
         <p class="text-xl font-bold mb-2">
-          I'm a Software Engineer at DXC Technology.
+          I'm a {{ cv[0].title }} at {{ cv[0].name }}.
         </p>
         <p class="mb-2">
           Currently residing in sunny St. Petersburg, FL. For those who are
@@ -35,11 +35,13 @@
 <script>
 import CardLayout from '/@/layouts/CardLayout.vue'
 import { BtnColorProvider } from '/@/composables/btn-color-provider.js'
+import cv from '../components/cv/cv.js'
 export default {
   setup() {
     return {
       CardLayout,
-      BtnColorProvider
+      BtnColorProvider,
+      cv,
     }
   }
 }

@@ -10,7 +10,7 @@
       v-if="
         route.name != 'blog' && route.name != 'cv' && route.name != 'blog-post'
       "
-      class="container items-center mx-auto max-w-xl p-5 text-gray-700 bg-gray-100 sm:bg-white rounded sm:shadow-md"
+      class="container items-center mx-auto p-5 text-gray-700 bg-gray-100 sm:bg-white rounded sm:shadow-md"
     >
       <div>
         <span class="italic text-gray-500"
