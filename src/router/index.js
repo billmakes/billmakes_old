@@ -10,38 +10,38 @@ const routes = [
   {
     path: '/',
     name: 'home',
-    component: Home
+    component: Home,
   },
   {
     path: '/about',
     name: 'about',
-    component: About
+    component: About,
   },
-  {
-    path: '/blog',
-    name: 'blog',
-    component: Blog
-  },
+  //  {
+  //    path: '/blog',
+  //    name: 'blog',
+  //    component: Blog,
+  //  },
   {
     path: '/blog/:id',
     name: 'blog-post',
-    component: Post
+    component: Post,
   },
   {
     path: '/contact',
     name: 'contact',
-    component: Contact
+    component: Contact,
   },
   {
     path: '/cv',
     name: 'cv',
-    component: CV
-  }
+    component: CV,
+  },
 ]
 
 const router = createRouter({
   history: createWebHistory(),
-  routes
+  routes,
 })
 
 export default router

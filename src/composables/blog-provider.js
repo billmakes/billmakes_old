@@ -9,17 +9,17 @@ for (const path in posts) {
     .slice(0, -1)
     .join('.')
 
-  import('../../blog/' + newPath + '.md').then(async post => {
+  import('../../blog/' + newPath + '.md').then(async (post) => {
     state.posts.push({
       meta: post.attributes,
-      post: post.html
+      post: post.html,
     })
   })
 }
 
 function findMatches(term) {
   if (term.length) {
-    state.filteredPosts = state.posts.filter(post => {
+    state.filteredPosts = state.posts.filter((post) => {
       const regex = new RegExp(term, 'gi')
       return post.meta.title.match(regex) || post.meta.description.match(regex)
     })
@@ -28,7 +28,7 @@ function findMatches(term) {
 
 const state = reactive({
   posts: [],
-  filteredPosts: []
+  filteredPosts: [],
 })
 
 const getPosts = computed(() =>
@@ -45,5 +45,5 @@ const getFilteredPosts = computed(() =>
 export const BlogProvider = readonly({
   getPosts,
   getFilteredPosts,
-  filterPosts: findMatches
+  filterPosts: findMatches,
 })

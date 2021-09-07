@@ -1,7 +1,14 @@
 <template>
   <header>
     <nav
-      class="flex flex-col sm:flex-row justify-center sm:justify-between items-center p-6"
+      class="
+        flex flex-col
+        sm:flex-row
+        justify-center
+        sm:justify-between
+        items-center
+        p-6
+      "
     >
       <div class="mb-2 sm:mb-0">
         <NavButton
@@ -14,8 +21,8 @@
       <div>
         <NavButton
           v-for="item in navRoutes"
-          :nav-item="item"
           :key="item.name"
+          :nav-item="item"
           color="gray"
           class="ml-2 sm:text-lg text-sm"
         >
@@ -32,18 +39,17 @@ import NavButton from './NavButton.vue'
 const navRoutes = [
   { label: 'About', name: 'about' },
   { label: 'Contact', name: 'contact' },
-  { label: 'Blog', name: 'blog' },
-  { label: 'CV', name: 'cv' }
+  //  { label: 'Blog', name: 'blog' },
+  { label: 'CV', name: 'cv' },
 ]
 export default {
   setup() {
     return {
       navRoutes,
-      NavButton
+      NavButton,
     }
-  }
+  },
 }
 </script>
 
-<style>
-</style>
+<style></style>
